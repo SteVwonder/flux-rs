@@ -19,7 +19,7 @@ impl FluxResultCheck for std::os::raw::c_int {
     where
         Self: std::marker::Sized,
     {
-        println!("{:?}", self);
+        //println!("{:?}", self);
         if self < 0 {
             Err(std::io::Error::last_os_error().into())
         } else {
